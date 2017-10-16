@@ -1,7 +1,5 @@
 def answer(start, length):
     
-    #first find XORSUM(i=start:start+length**2, i)
-    #this is the checksum of every minion in line
     #first a function that gets the checksum of the sequence 0..x
     def getChecksum(first, last):
 
@@ -24,8 +22,3 @@ def answer(start, length):
         ans ^= getChecksum(start + i*length, start + (i+1)*(length-1))
 
     return ans
-    
-if __name__ == "__main__":
-  while(1):
-      param = raw_input().split(" ")
-      print answer(int(param[0]),int(param[1]))
