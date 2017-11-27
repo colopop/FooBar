@@ -58,17 +58,21 @@ Test cases
 ==========
 
 Inputs:
+
     (int) w = 2
     (int) h = 2
     (int) s = 2
 Output:
+
     (string) "7"
 
 Inputs:
+
     (int) w = 2
     (int) h = 3
     (int) s = 4
 Output:
+
     (string) "430"
 
 Use verify [file] to test your solution and see how it does. When you are finished editing your code, use submit [file] to submit your answer. If your solution passes the test cases, it will be removed from your home folder.
