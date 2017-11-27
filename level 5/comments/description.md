@@ -11,38 +11,38 @@ Write a function answer(w, h, s) that takes 3 integers and returns the number of
 
 For example, consider w=2, h=2, s=2. We have a 2x2 grid where each celestial body is either in state 0 (for instance, silent) or state 1 (for instance, noisy).  We can examine which grids are equivalent by swapping rows and columns.
 
-00
-00
+    00
+    00
 
 In the above configuration, all celestial bodies are "silent" - that is, they have a state of 0 - so any swap of row or column would keep it in the same state.
 
-00 00 01 10
-01 10 00 00
+    00 00 01 10
+    01 10 00 00
 
 1 celestial body is emitting noise - that is, has a state of 1 - so swapping rows and columns can put it in any of the 4 positions.  All four of the above configurations are equivalent.
 
-00 11
-11 00
+    00 11
+    11 00
 
 2 celestial bodies are emitting noise side-by-side.  Swapping columns leaves them unchanged, and swapping rows simply moves them between the top and bottom.  In both, the *groupings* are the same: one row with two bodies in state 0, one row with two bodies in state 1, and two columns with one of each state.
 
-01 10
-01 10
+    01 10
+    01 10
 
 2 noisy celestial bodies adjacent vertically. This is symmetric to the side-by-side case, but it is different because there's no way to transpose the grid.
 
-01 10
-10 01
+    01 10
+    10 01
 
 2 noisy celestial bodies diagonally.  Both have 2 rows and 2 columns that have one of each state, so they are equivalent to each other.
 
-01 10 11 11
-11 11 01 10
+    01 10 11 11
+    11 11 01 10
 
 3 noisy celestial bodies, similar to the case where only one of four is noisy.
 
-11
-11
+    11
+    11
 
 4 noisy celestial bodies.
 
